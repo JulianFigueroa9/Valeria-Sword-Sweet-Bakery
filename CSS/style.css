@@ -39,7 +39,6 @@ nav{
     font-size: 17px
 }
 
-
 .logoNav{
     width: 75px;
     height: 75px;
@@ -86,6 +85,7 @@ footer{
 
 #copyright{
     font-size: 16px;
+    cursor: default;
 }
 
 /* INDEX */
@@ -93,6 +93,7 @@ footer{
 .infoIndex{
     margin-bottom: 2%;
     padding: 2%;
+    cursor:default
 }
 
 /* PRODUCTOS */
@@ -105,14 +106,15 @@ footer{
     width: fit-content;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: default;
 }
 
-#tortasPersonalizadas{
+#tortasPersonalizadas, #tortasTartas, #boxes, #especialidades{
     display: flex;
     flex-direction: column;
 }
 
-#fotoTortaPersonalizada{
+#fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad{
     object-fit: cover;
     align-self: center;
     width: 250px;
@@ -123,67 +125,7 @@ footer{
     transition: all 0.5s;
 }
 
-#fotoTortaPersonalizada:hover{
-    transform: scale(1.05);
-}
-
-#tortasTartas{
-    display: flex;
-    flex-direction: column;
-}
-
-#fotoTorta{
-    object-fit: cover;
-    align-self: center;
-    width: 250px;
-    height: 250px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    transition: all 0.5s;
-}
-
-#fotoTorta:hover{
-    transform: scale(1.05);
-}
-
-#boxes{
-    display: flex;
-    flex-direction: column;
-}
-
-#fotoBox{
-    object-fit: cover;
-    align-self: center;
-    width: 250px;
-    height: 250px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    transition: all 0.5s;
-}
-
-#fotoBox:hover{
-    transform: scale(1.05);
-}
-
-#especialidades{
-    display: flex;
-    flex-direction: column;
-}
-
-#fotoEspecialidad{
-    object-fit: cover;
-    align-self: center;
-    width: 250px;
-    height: 250px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    transition: all 0.5s;
-}
-
-#fotoEspecialidad:hover{
+#fotoTortaPersonalizada:hover, #fotoTorta:hover, #fotoBox:hover, #fotoEspecialidad:hover{
     transform: scale(1.05);
 }
 
@@ -207,6 +149,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-content: center;
+    cursor: default;
 }
 
 #faqTitulo{
@@ -226,6 +169,11 @@ footer{
     margin: 15px;
 }
 
+#linkfaq{
+    text-decoration: underline;
+    color: black;
+}
+
 /* GALERIA */
 
 .galeria{
@@ -238,6 +186,7 @@ footer{
     margin: 15px;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: default;
 }
 
 .divisoresGaleria{
@@ -263,7 +212,7 @@ footer{
 
 #infoEnvios{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -280,12 +229,15 @@ footer{
     margin: 40px;
     justify-content: space-between;
     height: 450px;
-
 }
 
 .tituloZona{
     text-decoration: underline;
     font-size: 25px;
+}
+
+.costoEnvio{
+    font-weight: 600;
 }
 
 #mapaEnvios{
@@ -364,11 +316,16 @@ form div{
     width: 30%;
 }
 
+.botonEnviar:hover{
+    background-color: #09925b;
+}
+
+
 #infoTelefono{
     display: flex;
     flex-flow: row wrap ;
     align-items: center;
-    margin: 20px 0 10px 15px;
+    margin: 25px 10px 10px 15px;
 }
 
 
