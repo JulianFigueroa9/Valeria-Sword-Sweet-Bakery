@@ -1,0 +1,49 @@
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1024px){
+
+    /* PRODUCTOS */
+
+    #infoProductos{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #tortasPersonalizadas,#tortasTartas,#boxes,#especialidades{
+        border-right: solid black 2px;
+    }
+
+    #fotoTortaPersonalizada,#fotoTorta,#fotoBox,#fotoEspecialidad{
+        height: 250px;
+        width: 250px;
+    }
+
+    /* ENVIOS */
+
+    #mapaEnvios{
+        width: 700px;
+        height: 450px;
+        margin: 20px 0 0 10px;
+    }
+
+    /* CONTACTO */
+
+    #infoConsulta{
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-between;
+    }
+
+    #infoUbicacion{
+        width: 50%;
+    }
+
+    #mapaUbicacion{
+        width: 100%;
+        margin-left: 4%;
+    }
+
+    .formularioContacto{
+        width: 100%;
+    }
+}

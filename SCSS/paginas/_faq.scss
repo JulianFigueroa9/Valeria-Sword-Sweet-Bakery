@@ -1,0 +1,30 @@
+/* PREGUNTAS FRECUENTES */
+
+#faq{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    cursor: default;
+}
+
+#faqTitulo{
+    font-size: 25px;
+    text-decoration: underline;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.pregunta{
+    font-weight: 600;
+    margin: 15px;
+    font-size: 20px;
+}
+.respuesta{
+    font-size: 16px;
+    margin: 15px;
+}
+
+#linkfaq{
+    text-decoration: underline;
+    color: black;
+}

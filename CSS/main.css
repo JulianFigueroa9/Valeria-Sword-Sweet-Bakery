@@ -1,0 +1,278 @@
+/* TODO EL ARCHIVO */
+* {
+  font-size: 1.05rem; }
+
+*::-webkit-scrollbar {
+  width: 16px; }
+
+*::-webkit-scrollbar-track {
+  background: #f3d3d3; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #56b0c2;
+  border-radius: 10px;
+  border: 3px solid #ffffff; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(to bottom, #F5F4C7, #f8f68f); }
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to top, #C5DED4, #9cddc3);
+  z-index: 1; }
+  header nav {
+    font-weight: 600; }
+  header .menuNav {
+    font-size: 17px; }
+  header .logoNav {
+    width: 75px;
+    height: 75px; }
+
+/* FOOTER */
+footer {
+  background-image: linear-gradient(to bottom, #C5DED4, #9cddc3);
+  font-size: 20px; }
+  footer #infoRedes {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center; }
+  footer #menuRedes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  footer .linkRedes {
+    margin-left: 15px;
+    color: black; }
+  footer #logoFacebook:hover {
+    color: #3b5998; }
+  footer #logoWhatsapp:hover {
+    color: #4FCE5D; }
+  footer #logoInstagram:hover {
+    color: #833AB4; }
+  footer #copyright {
+    font-size: 16px;
+    cursor: default; }
+
+/* INDEX */
+.infoIndex {
+  margin-bottom: 2%;
+  padding: 2%;
+  cursor: default; }
+
+/* PRODUCTOS */
+#infoProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: default; }
+
+#tortasPersonalizadas, #tortasTartas, #boxes, #especialidades {
+  display: flex;
+  flex-direction: column; }
+
+#fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad {
+  object-fit: cover;
+  align-self: center;
+  width: 250px;
+  height: 250px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s; }
+  #fotoTortaPersonalizada:hover, #fotoTorta:hover, #fotoBox:hover, #fotoEspecialidad:hover {
+    transform: scale(1.05); }
+
+.tituloProductos {
+  align-self: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-decoration: underline; }
+
+.descripcionProductos {
+  align-self: center;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 10px; }
+
+/* PREGUNTAS FRECUENTES */
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  cursor: default; }
+
+#faqTitulo {
+  font-size: 25px;
+  text-decoration: underline;
+  align-self: center;
+  margin-top: 20px; }
+
+.pregunta {
+  font-weight: 600;
+  margin: 15px;
+  font-size: 20px; }
+
+.respuesta {
+  font-size: 16px;
+  margin: 15px; }
+
+#linkfaq {
+  text-decoration: underline;
+  color: black; }
+
+/* GALERIA */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+  .galeriaTitulos {
+    margin: 15px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: default; }
+  .galeriaDivisores {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden; }
+  .galeriaFoto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    transition: all 0.5s; }
+    .galeriaFoto:hover {
+      transform: scale(1.06); }
+
+/* ENVIOS */
+#infoEnvios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.envioTitulo {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-top: 2%; }
+
+#zonasEnvios {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 40px;
+  justify-content: space-between;
+  height: 450px; }
+
+.tituloZona {
+  text-decoration: underline;
+  font-size: 25px; }
+
+.costoEnvio {
+  font-weight: 600; }
+
+#mapaEnvios {
+  width: 90%;
+  height: 75vh; }
+
+/* CONTACTO */
+.tituloContacto {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-weight: 600; }
+
+#textoContacto {
+  margin-left: 1%; }
+
+#infoConsulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+#infoUbicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+#tituloUbicacion {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600; }
+
+#mapaUbicacion {
+  width: 65%;
+  height: 70vh; }
+
+#formularioContacto {
+  margin-top: 2%; }
+
+.tituloForm {
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 600; }
+
+.contenidoFormulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+form div {
+  width: 100%; }
+
+.inputContacto {
+  width: 10%; }
+
+.botonEnviar {
+  background-color: #865101;
+  font-weight: 600;
+  width: 30%; }
+  .botonEnviar:hover {
+    background-color: #09925b; }
+
+#infoTelefono {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 25px 10px 10px 15px; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  /* PRODUCTOS */
+  #infoProductos {
+    display: flex;
+    flex-direction: row; }
+  #tortasPersonalizadas, #tortasTartas, #boxes, #especialidades {
+    border-right: solid black 2px; }
+  #fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad {
+    height: 250px;
+    width: 250px; }
+  /* ENVIOS */
+  #mapaEnvios {
+    width: 700px;
+    height: 450px;
+    margin: 20px 0 0 10px; }
+  /* CONTACTO */
+  #infoConsulta {
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between; }
+  #infoUbicacion {
+    width: 50%; }
+  #mapaUbicacion {
+    width: 100%;
+    margin-left: 4%; }
+  .formularioContacto {
+    width: 100%; } }
