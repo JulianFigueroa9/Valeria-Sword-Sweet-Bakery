@@ -1,10 +1,8 @@
 /* PREGUNTAS FRECUENTES */
 
 #faq{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    cursor: default;
+    @include flexbox (column nowrap, center, flex-start);
+    @extend %cursorNormal;
 }
 
 #faqTitulo{
@@ -20,11 +18,15 @@
     font-size: 20px;
 }
 .respuesta{
-    font-size: 16px;
+    font-size: map-get($variablesBasicas,textoNormal);
     margin: 15px;
 }
 
 #linkfaq{
-    text-decoration: underline;
     color: black;
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: underline;
+    }
 }

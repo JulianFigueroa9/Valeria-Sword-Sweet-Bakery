@@ -5,8 +5,7 @@
     /* PRODUCTOS */
 
     #infoProductos{
-        display: flex;
-        flex-direction: row;
+        @include flexbox (row nowrap, center, center);
     }
 
     #tortasPersonalizadas,#tortasTartas,#boxes,#especialidades{
@@ -29,9 +28,8 @@
     /* CONTACTO */
 
     #infoConsulta{
-        flex-direction: row;
+        @include flexbox (row nowrap, space-between, center);
         width: 75%;
-        justify-content: space-between;
     }
 
     #infoUbicacion{

@@ -1,3 +1,11 @@
+.infoIndex, #infoProductos, #faq, .galeriaTitulos, #infoEnvios, .envioTitulo, .tituloZona, .costoEnvio, .tituloContacto, #textoContacto, #tituloUbicacion, .tituloForm, #infoTelefono {
+  cursor: default; }
+
+#fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
 /* TODO EL ARCHIVO */
 * {
   font-size: 1.05rem; }
@@ -61,32 +69,29 @@ footer {
 /* INDEX */
 .infoIndex {
   margin-bottom: 2%;
-  padding: 2%;
-  cursor: default; }
+  padding: 2%; }
 
 /* PRODUCTOS */
 #infoProductos {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: fit-content;
   margin-top: 20px;
-  margin-bottom: 20px;
-  cursor: default; }
+  margin-bottom: 20px; }
 
 #tortasPersonalizadas, #tortasTartas, #boxes, #especialidades {
   display: flex;
-  flex-direction: column; }
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
 
 #fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad {
   object-fit: cover;
   align-self: center;
   width: 250px;
   height: 250px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.5s; }
   #fotoTortaPersonalizada:hover, #fotoTorta:hover, #fotoBox:hover, #fotoEspecialidad:hover {
     transform: scale(1.05); }
@@ -106,9 +111,9 @@ footer {
 /* PREGUNTAS FRECUENTES */
 #faq {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  cursor: default; }
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start; }
 
 #faqTitulo {
   font-size: 25px;
@@ -122,26 +127,30 @@ footer {
   font-size: 20px; }
 
 .respuesta {
-  font-size: 16px;
   margin: 15px; }
 
 #linkfaq {
-  text-decoration: underline;
-  color: black; }
+  color: black;
+  text-decoration: none; }
+  #linkfaq:hover {
+    text-decoration: underline; }
 
 /* GALERIA */
 .galeria {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   margin: auto; }
   .galeriaTitulos {
     margin: 15px;
     font-size: 1.25rem;
-    font-weight: 600;
-    cursor: default; }
+    font-weight: 600; }
   .galeriaDivisores {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
     overflow-x: scroll;
     overflow-y: hidden; }
   .galeriaFoto {
@@ -156,7 +165,7 @@ footer {
 /* ENVIOS */
 #infoEnvios {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center; }
 
@@ -168,8 +177,9 @@ footer {
 #zonasEnvios {
   display: flex;
   flex-flow: column wrap;
-  margin: 40px;
   justify-content: space-between;
+  align-items: space-between;
+  margin: 40px;
   height: 450px; }
 
 .tituloZona {
@@ -196,14 +206,15 @@ footer {
 
 #infoConsulta {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%; }
 
 #infoUbicacion {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   width: 100%; }
 
@@ -226,7 +237,9 @@ footer {
 
 .contenidoFormulario {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   width: 100%; }
 
 form div {
@@ -245,7 +258,8 @@ form div {
 #infoTelefono {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 25px 10px 10px 15px; }
 
 /* MEDIA QUERIES */
@@ -253,7 +267,9 @@ form div {
   /* PRODUCTOS */
   #infoProductos {
     display: flex;
-    flex-direction: row; }
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
   #tortasPersonalizadas, #tortasTartas, #boxes, #especialidades {
     border-right: solid black 2px; }
   #fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad {
@@ -266,9 +282,11 @@ form div {
     margin: 20px 0 0 10px; }
   /* CONTACTO */
   #infoConsulta {
-    flex-direction: row;
-    width: 75%;
-    justify-content: space-between; }
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%; }
   #infoUbicacion {
     width: 50%; }
   #mapaUbicacion {

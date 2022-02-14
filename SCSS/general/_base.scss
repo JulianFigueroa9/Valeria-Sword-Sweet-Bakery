@@ -21,7 +21,7 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background-image: linear-gradient(to bottom, $colorPrincipal, #f8f68f);
+    background-image: linear-gradient(to bottom, map-get($variablesBasicas,colorPrincipal), #f8f68f);
 }
 
 /* HEADER */
@@ -29,7 +29,7 @@ body{
 header{
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to top, $colorSecundario, #9cddc3);
+    background-image: linear-gradient(to top, map-get($variablesBasicas,colorSecundario), #9cddc3);
     z-index: 1;
     
     nav{
@@ -37,7 +37,7 @@ header{
     }
 
     .menuNav{
-        font-size: 17px
+        font-size: 17px;
     }
 
     .logoNav{
@@ -49,7 +49,7 @@ header{
 /* FOOTER */
 
 footer{
-    background-image: linear-gradient(to bottom, $colorSecundario, #9cddc3);
+    background-image: linear-gradient(to bottom, map-get($variablesBasicas,colorSecundario), #9cddc3);
     font-size: 20px;
 
     #infoRedes{
@@ -72,19 +72,19 @@ footer{
     }
 
     #logoFacebook:hover{
-        color:  #3b5998;
+        color: map-get($variablesBasicas,colorFacebook);
     }
 
     #logoWhatsapp:hover{
-        color:	#4FCE5D;
+        color: map-get($variablesBasicas,colorWhatsapp);
     }
 
     #logoInstagram:hover{
-        color: #833AB4 ;
+        color: map-get($variablesBasicas,colorInstagram) ;
     }
 
     #copyright{
-        font-size: 16px;
+        font-size: map-get($variablesBasicas,tamañoNormal);
         cursor: default;
     }
 }

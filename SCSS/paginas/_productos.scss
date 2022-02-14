@@ -1,19 +1,15 @@
 /* PRODUCTOS */
 
 #infoProductos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (column nowrap, center, center);
     width: fit-content;
     margin-top: 20px;
     margin-bottom: 20px;
-    cursor: default;
+    @extend %cursorNormal;
 }
 
 #tortasPersonalizadas, #tortasTartas, #boxes, #especialidades{
-    display: flex;
-    flex-direction: column;
+    @include flexbox (column nowrap, center, center);
 }
 
 #fotoTortaPersonalizada, #fotoTorta, #fotoBox, #fotoEspecialidad{
@@ -21,9 +17,7 @@
     align-self: center;
     width: 250px;
     height: 250px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    @extend %boxShadow;
     transition: all 0.5s;
 
     &:hover{

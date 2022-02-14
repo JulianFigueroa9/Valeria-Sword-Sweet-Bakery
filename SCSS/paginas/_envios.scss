@@ -1,33 +1,32 @@
 /* ENVIOS */
 
 #infoEnvios{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (row nowrap, center, center);
+    @extend %cursorNormal;
 }
 
 .envioTitulo{
     font-size: 25px;
     text-decoration: underline;
     margin-top: 2%;
+    @extend %cursorNormal;
 }
 
 #zonasEnvios{
-    display: flex;
-    flex-flow: column wrap;
+    @include flexbox (column wrap, space-between, space-between);
     margin: 40px;
-    justify-content: space-between;
     height: 450px;
 }
 
 .tituloZona{
     text-decoration: underline;
     font-size: 25px;
+    @extend %cursorNormal;
 }
 
 .costoEnvio{
     font-weight: 600;
+    @extend %cursorNormal;
 }
 
 #mapaEnvios{

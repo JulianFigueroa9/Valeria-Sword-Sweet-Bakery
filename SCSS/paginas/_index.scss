@@ -3,5 +3,5 @@
 .infoIndex{
     margin-bottom: 2%;
     padding: 2%;
-    cursor:default
+    @extend %cursorNormal;
 }

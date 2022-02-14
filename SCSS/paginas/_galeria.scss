@@ -1,20 +1,18 @@
 /* GALERIA */
 
 .galeria{
-    display: flex;
-    flex-direction: column;
+    @include flexbox (column nowrap, center, center);
     margin: auto;
 
     &Titulos{
         margin: 15px;
         font-size: 1.25rem;
         font-weight: 600;
-        cursor: default;
+        @extend %cursorNormal;
     }
 
     &Divisores{
-        display: flex;
-        flex-direction: row;
+        @include flexbox (row nowrap, flex-start, center);
         overflow-x: scroll;
         overflow-y: hidden;
     }
