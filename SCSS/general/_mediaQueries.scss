@@ -5,11 +5,11 @@
     /* PRODUCTOS */
 
     #infoProductos{
-        @include flexbox (row nowrap, center, center);
+        @include flexbox (row nowrap, center, flex-start);
     }
 
     #tortasPersonalizadas,#tortasTartas,#boxes,#especialidades{
-        border-right: solid black 2px;
+        width: 25%; 
     }
 
     #fotoTortaPersonalizada,#fotoTorta,#fotoBox,#fotoEspecialidad{
@@ -19,6 +19,10 @@
 
     /* ENVIOS */
 
+    #infoEnvios{
+        flex-flow: row nowrap;
+    }
+    
     #mapaEnvios{
         width: 700px;
         height: 450px;

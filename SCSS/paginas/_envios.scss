@@ -1,14 +1,7 @@
 /* ENVIOS */
 
 #infoEnvios{
-    @include flexbox (row nowrap, center, center);
-    @extend %cursorNormal;
-}
-
-.envioTitulo{
-    font-size: 25px;
-    text-decoration: underline;
-    margin-top: 2%;
+    @include flexbox (column nowrap, center, center);
     @extend %cursorNormal;
 }
 
@@ -20,8 +13,9 @@
 
 .tituloZona{
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 20px;
     @extend %cursorNormal;
+    font-weight: 600;
 }
 
 .costoEnvio{

@@ -1,12 +1,7 @@
 /* CONTACTO */
 
-.tituloContacto{
-    font-size: 25px;
-    text-decoration: underline;
+.tituloGral{
     margin-bottom: 2%;
-    margin-top: 2%;
-    font-weight: 600;
-    @extend %cursorNormal;
 }
 
 #textoContacto{
